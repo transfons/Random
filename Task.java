@@ -15,14 +15,14 @@ public class Task {
             System.out.println("Неверно заданный диапазон: количество введенных чисел = "+length);
             System.exit(0);
         }
-        if (numArr[0] <= 0) {
+        if (numArr[0] < 0) {
             System.out.println("Число должно  быть положительным: "+numArr[0]);
             System.exit(0);
         } else if (numArr[0] > 1000000) {
             System.out.println("Неверно заданный диапазон");
             System.exit(0);
         }
-        if (numArr[1] <= 1) {
+        if (numArr[1] < 1) {
             System.out.println("Число должно  быть положительным: "+numArr[1]);
             System.exit(0);
         } else if (numArr[1] > 1000000) {
